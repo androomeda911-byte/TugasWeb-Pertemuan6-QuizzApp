@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app-container">
+
+        <header class="app-header">
+            <div class="header-top">
+                <span class="badge">TUGAS RUTIN 6</span>
+                <span class="question-count" id="questionCount">
+                    5 Pertanyaan
+                </span>
+            </div>
+
+            <h1>Interactive Quiz</h1>
+            <p>Uji pengetahuanmu tentang Pemrograman Web.</p>
+        </header>
+
+        <section class="quiz-content">
+
+            <div class="quiz-top">
+                <div>
+                    <span class="label">PROGRESS</span>
+                    <p id="progress">Soal 1 dari 5</p>
+                </div>
+
+                <div class="score-box">
+                    <span class="label">SKOR</span>
+                    <p id="currentScore">0</p>
+                </div>
+            </div>
+
+            <div class="progress-track">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+
+            <div class="question-section">
+                <span class="label">PERTANYAAN</span>
+                <h2 id="question">Loading question...</h2>
+            </div>
+
+            <div id="options" class="options-grid">
+                <!-- Pilihan jawaban dibuat menggunakan JavaScript -->
+            </div>
+
+            <div id="feedback" class="feedback hidden"></div>
+
+            <button id="nextBtn" class="next-btn" disabled>
+                Pilih jawaban terlebih dahulu →
+            </button>
+
+        </section>
+
+        <section id="result" class="result-section hidden">
+
+            <div class="result-icon">🏆</div>
+
+            <span class="label">QUIZ SELESAI</span>
+            <h2>Hasil Quiz Kamu</h2>
+
+            <div class="final-score" id="score">0/5</div>
+
+            <p id="resultMessage">Terima kasih sudah mengerjakan quiz.</p>
+
+            <div class="high-score-card">
+                <span>🏅 High Score</span>
+                <strong id="highScore">0%</strong>
+            </div>
+
+            <button id="restartBtn" class="restart-btn">
+                🔄 Ulangi Quiz
+            </button>
+
+        </section>
+
+        <footer>
+            <p>JavaScript DOM & Events • Pemrograman Web</p>
+        </footer>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
